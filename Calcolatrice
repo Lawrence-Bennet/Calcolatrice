@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Calcolatrice {
+    public static void main(String[] args) {
+    operazioni();
+    }
+
+    public static void operazioni() {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("Inserisci il primo operando: ");
+        float num1 = input.nextFloat();
+        System.out.printf("Inserisci il secondo operando: ");
+        float num2 = input.nextFloat();
+        System.out.println("Inserisci l'operazione |1) somma; 2) sottrazione; 3) moltiplicazione; 4) divisione|");
+        int operazione = input.nextInt();
+        switch(operazione) {
+
+            case 1: {
+                float result = num1+num2;
+                System.out.printf("La somma e' %.3f",result);
+                break;
+            }
+
+            case 2: {
+                float result = num1-num2;
+                System.out.printf("La differenza e' %.3f",result);
+                break;
+            }
+
+            case 3: {
+                float result = num1*num2;
+                System.out.printf("Il prodotto e' %.3f",result);
+                break;
+            }
+
+            case 4: {
+                float result = num1/num2;
+                System.out.printf("Il quoziente e' %.3f",result);
+                break;
+            }
+
+        }
+    }
+}
