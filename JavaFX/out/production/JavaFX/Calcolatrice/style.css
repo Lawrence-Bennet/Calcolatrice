@@ -1,0 +1,19 @@
+Button.number{
+    -fx-background-color: #fcffe0;
+}
+
+#gridPane {
+    -fx-background-color: #44443d;
+}
+
+Button.number:pressed {
+    -fx-background-color: #b5b5a4;
+}
+
+Button.action {
+    -fx-background-color: #b2b2b2;
+}
+
+Button.action:pressed {
+    -fx-background-color: #969694;
+}
